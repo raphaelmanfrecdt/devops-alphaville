@@ -4,7 +4,8 @@ import re
 
 
 def validate_url(input):
-    URL_REGEX = re.compile(r"https?://.*/[a-zA-Z0-9-_,/.]*$", re.UNICODE | re.I)    if re.match(URL_REGEX, input):
+    URL_REGEX = re.compile(r"https?://.*/[a-zA-Z0-9-_,/.]*$", re.UNICODE | re.I)    
+    if re.match(URL_REGEX, input):
         return True
     else:
         return False
